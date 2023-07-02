@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "cordova-ios": "^6.3.0",
+    "cordova-plugin-badge": "^0.8.9",
+    "cordova-plugin-local-notification": "^0.9.0-beta.3"
+  },
+  "cordova": {
+    "platforms": [
+      "ios"
+    ],
+    "plugins": {
+      "cordova-plugin-device": {}
+    }
+  }
+}
