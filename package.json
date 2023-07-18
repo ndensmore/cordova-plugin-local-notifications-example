@@ -1,11 +1,13 @@
 {
   "devDependencies": {
+    "cordova-browser": "^7.0.0",
     "cordova-ios": "^7.0.0",
     "cordova-plugin-badge": "0.8.9",
     "cordova-plugin-local-notification": "0.9.0-beta.2"
   },
   "cordova": {
     "platforms": [
+      "browser",
       "ios"
     ],
     "plugins": {
