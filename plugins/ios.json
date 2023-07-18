@@ -8,18 +8,18 @@
   },
   "installed_plugins": {
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "de.appplant.localnotification.example"
+      "PACKAGE_NAME": "com.aa.fltops.cordovapoc"
     },
     "cordova-plugin-local-notification": {
-      "PACKAGE_NAME": "de.appplant.localnotification.example"
+      "PACKAGE_NAME": "com.aa.fltops.cordovapoc"
     },
     "cordova-plugin-x-toast": {
-      "PACKAGE_NAME": "de.appplant.localnotification.example"
+      "PACKAGE_NAME": "com.aa.fltops.cordovapoc"
     }
   },
   "dependent_plugins": {
     "cordova-plugin-badge": {
-      "PACKAGE_NAME": "de.appplant.localnotification.example"
+      "PACKAGE_NAME": "com.aa.fltops.cordovapoc"
     }
   }
 }

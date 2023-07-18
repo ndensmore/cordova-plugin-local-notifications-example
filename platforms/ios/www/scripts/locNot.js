@@ -1,10 +1,7 @@
 
 var locNot = (function () {
-
-
+    'use strict';
     var id = 1, dialog;
-
-
     var ln = {};
     ln.callback = function () {
         cordova.plugins.notification.local.getIds(function (ids) {

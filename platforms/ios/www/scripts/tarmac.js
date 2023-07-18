@@ -38,6 +38,12 @@ var tarmac = (function () {
         tarmac.btnDom.addEventListener("click", routeClick);
         tarmac.btnInt.addEventListener("click", routeClick);
         localStorage.setItem('tarmac', JSON.stringify(tarmac));
+
+
+
+
+
+        
     };
     tarmac.pause = function () {
         localStorage.setItem('tarmac', JSON.stringify(tarmac));
@@ -67,25 +73,25 @@ var tarmac = (function () {
         return data;
     }
 
-    tarmac.schedule=function(){
-        var id=0;
-for(var obj in tarmac.data){
-    
-id++;
+    function schedule() {
+        var id = 0;
+        var sound = device.platform == 'Android' ? 'file://sound.mp3' : 'file://beep.caf';
+        for (var obj in tarmac.data) {
+            if (obj.type === tarmac.routeType) {
+                id++;
 
-cordova.plugins.notification.local.schedule({
-    id: 1,
-    title: 'Scheduled with delay',
-    text: 'Test Message 1',
-    at: _5_sec_from_now,
-    sound: sound,
-    badge: 12
-});
-
-
-
-
-
+                var now = new Date().getTime(),
+                    time = new Date(now + obj.sec * 1000);
+                cordova.plugins.notification.local.schedule({
+                    id: id,
+                    title: 'Tarmac',
+                    text: obj.text,
+                    at: time,
+                    sound: sound,
+                    badge: 12
+                });
+            }
+        }
     }
     function updateClock(ms) {
         var milliseconds = parseInt((ms % 1000) / 100),
@@ -116,7 +122,7 @@ cordova.plugins.notification.local.schedule({
         updateClock(msElapsed);
         var seconds = Math.round(msElapsed / 1000);
         displayAlerts(seconds);
-        if (seconds-1 > tarmac.endTime) { window.clearInterval(tarmac.timer); }
+        if (seconds - 1 > tarmac.endTime) { window.clearInterval(tarmac.timer); }
         //if (tarmac.endTime === seconds) { }
     }
     function startTimer(e) {
@@ -126,6 +132,7 @@ cordova.plugins.notification.local.schedule({
         tarmac.msStart = new Date().getTime();
         tarmac.paused = false;
         tarmac.timer = window.setInterval(tick, 1000);
+        schedule();
     }
     function resumeTimer(e) {
         if (tarmac.paused) {

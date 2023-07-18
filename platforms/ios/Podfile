@@ -2,7 +2,7 @@
 
 platform :ios, '11.0'
 
-target 'NotificationExample' do
-	project 'NotificationExample.xcodeproj'
+target 'CordovaPOC' do
+	project 'CordovaPOC.xcodeproj'
 
 end
