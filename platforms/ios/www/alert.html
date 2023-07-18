@@ -1,0 +1,66 @@
+﻿
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Using Ionic without any framework</title>
+
+    <link href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" rel="stylesheet" media="screen">
+    <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+</head>
+<body>
+<script>
+    hello = async function () {
+        alert('Hello World!');
+    };
+
+    // Our custom element
+    class MyPopover extends HTMLElement {
+        constructor() {
+            super();
+        }
+
+        async connectedCallback() {
+
+            // Here we parse the content of the popover
+            this.innerHTML = '<ion-content><ion-button onclick="hello()">Click me</ion-button></ion-content>';
+        }
+    }
+
+    // We define our custom element
+    customElements.define('my-popover', MyPopover);
+
+    // The function to bring the pieces together
+    presentMyPopover = async function() {
+        // We get the anchor
+        const popoverController = document.querySelector('ion-popover-controller');
+
+        await popoverController.componentOnReady();
+
+        // We create the popover for our custom element
+        const popover = await popoverController.create({
+            component: 'my-popover',
+            translucent: true
+        });
+
+        // We present the popover
+        return await popover.present();
+    };
+
+</script>
+
+<ion-app>
+    <ion-content text-center>
+        <h1>Popover usage</h1>
+        <!-- On click we call the function to open the popover -->
+        <ion-button onclick="presentMyPopover()">Open</ion-button>
+    </ion-content>
+
+    <!-- Our popover anchor -->
+    <ion-popover-controller></ion-popover-controller>
+</ion-app>
+
+</body>
+</html>
