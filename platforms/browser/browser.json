@@ -9,11 +9,11 @@
         "parents": {
           "/*": [
             {
-              "xml": "<feature name=\"Badge\"><param name=\"browser-package\" value=\"Badge\" /></feature>",
+              "xml": "<feature name=\"Device\"><param name=\"browser-package\" value=\"Device\" /></feature>",
               "count": 1
             },
             {
-              "xml": "<feature name=\"Device\"><param name=\"browser-package\" value=\"Device\" /></feature>",
+              "xml": "<feature name=\"Badge\"><param name=\"browser-package\" value=\"Badge\" /></feature>",
               "count": 1
             }
           ]
@@ -22,21 +22,48 @@
     }
   },
   "installed_plugins": {
-    "cordova-plugin-badge": {
-      "PACKAGE_NAME": "com.aa.flightops.tarmac-lne"
-    },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.aa.flightops.tarmac-lne"
     },
-    "cordova-plugin-local-notification": {
+    "cordova-plugin-x-toast": {
       "PACKAGE_NAME": "com.aa.flightops.tarmac-lne"
     },
-    "cordova-plugin-x-toast": {
+    "cordova-plugin-badge": {
+      "PACKAGE_NAME": "com.aa.flightops.tarmac-lne"
+    },
+    "cordova-plugin-local-notification": {
       "PACKAGE_NAME": "com.aa.flightops.tarmac-lne"
     }
   },
   "dependent_plugins": {},
   "modules": [
+    {
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "id": "cordova-plugin-device.device",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
+      ]
+    },
+    {
+      "file": "plugins/cordova-plugin-device/src/browser/DeviceProxy.js",
+      "id": "cordova-plugin-device.DeviceProxy",
+      "pluginId": "cordova-plugin-device",
+      "runs": true
+    },
+    {
+      "file": "plugins/cordova-plugin-x-toast/www/Toast.js",
+      "id": "cordova-plugin-x-toast.Toast",
+      "pluginId": "cordova-plugin-x-toast",
+      "clobbers": [
+        "window.plugins.toast"
+      ]
+    },
+    {
+      "file": "plugins/cordova-plugin-x-toast/test/tests.js",
+      "id": "cordova-plugin-x-toast.tests",
+      "pluginId": "cordova-plugin-x-toast"
+    },
     {
       "file": "plugins/cordova-plugin-badge/www/badge.js",
       "id": "cordova-plugin-badge.Badge",
@@ -57,20 +84,6 @@
       "file": "plugins/cordova-plugin-badge/src/browser/BadgeProxy.js",
       "id": "cordova-plugin-badge.Badge.Proxy",
       "pluginId": "cordova-plugin-badge",
-      "runs": true
-    },
-    {
-      "file": "plugins/cordova-plugin-device/www/device.js",
-      "id": "cordova-plugin-device.device",
-      "pluginId": "cordova-plugin-device",
-      "clobbers": [
-        "device"
-      ]
-    },
-    {
-      "file": "plugins/cordova-plugin-device/src/browser/DeviceProxy.js",
-      "id": "cordova-plugin-device.DeviceProxy",
-      "pluginId": "cordova-plugin-device",
       "runs": true
     },
     {
@@ -98,25 +111,12 @@
         "cordova.plugins.notification.local.core",
         "plugin.notification.local.core"
       ]
-    },
-    {
-      "file": "plugins/cordova-plugin-x-toast/www/Toast.js",
-      "id": "cordova-plugin-x-toast.Toast",
-      "pluginId": "cordova-plugin-x-toast",
-      "clobbers": [
-        "window.plugins.toast"
-      ]
-    },
-    {
-      "file": "plugins/cordova-plugin-x-toast/test/tests.js",
-      "id": "cordova-plugin-x-toast.tests",
-      "pluginId": "cordova-plugin-x-toast"
     }
   ],
   "plugin_metadata": {
-    "cordova-plugin-badge": "0.8.9",
     "cordova-plugin-device": "1.1.0",
-    "cordova-plugin-local-notification": "0.9.0-beta.2",
-    "cordova-plugin-x-toast": "2.3.1"
+    "cordova-plugin-x-toast": "2.3.1",
+    "cordova-plugin-badge": "0.8.9",
+    "cordova-plugin-local-notification": "0.9.0-beta.2"
   }
 }

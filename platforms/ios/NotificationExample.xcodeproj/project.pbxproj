@@ -16,18 +16,18 @@
 		4E7CA2B6272ABB0D00177EF9 /* config.xml in Copy Staging Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
 		4E7CA2B7272ABB0D00177EF9 /* www in Copy Staging Resources */ = {isa = PBXBuildFile; fileRef = 301BF56E109A69640062928A /* www */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		A737C1E7A1494F67B5CE88C4 /* APPBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C0D45DCEC34360A9A5D6CB /* APPBadge.m */; };
 		5DECA1A6B8C34B53925A7129 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E44E1AA1687473F99B754D0 /* CDVDevice.m */; };
-		A8A439B79C274E45B2DFB75A /* APPLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A283672B24600A92801F4 /* APPLocalNotification.m */; };
-		143FFDD35E074214BB006793 /* APPNotificationContent.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C9A78AD03742B990219745 /* APPNotificationContent.m */; };
-		570576B3968C44DA8200903A /* APPNotificationOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 540ED1B8402742978E14578B /* APPNotificationOptions.m */; };
-		F380C3CE8C304B47ACA25326 /* UNUserNotificationCenter+APPLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D215E7A36F4B1EB6F10DC8 /* UNUserNotificationCenter+APPLocalNotification.m */; };
-		0A2FEFEC10884F5AB560C47F /* UNNotificationRequest+APPLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C12A532C704E52A62C4334 /* UNNotificationRequest+APPLocalNotification.m */; };
-		D45B2D9AA9E64C33B8666B36 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD27E525CD74F6CACD5163D /* UserNotifications.framework */; };
-		3D39D55F5E3F45389E7FD132 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344954E05E184D0AB023F51F /* CoreLocation.framework */; };
 		3792B1534F8E490C92DAD48B /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2DCE6B7FA640D5B966CCCF /* Toast+UIView.m */; };
 		B249A5506C0E43DA8C9A5A37 /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9ACD81F51C4F1984D3ED1F /* Toast.m */; };
 		768CD6A7A9AF458D922A2FED /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35527B099D464788BB514B1C /* QuartzCore.framework */; };
+		00289D1DD3F8482DA398175D /* APPBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 03513775C6AB4D2A8A2328A5 /* APPBadge.m */; };
+		325850302FFE476D8FED7E88 /* APPLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D47390566E84738B1101B38 /* APPLocalNotification.m */; };
+		6090A17CFA494837B18F01FF /* APPNotificationContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4E9516675342DEA4ED3B0A /* APPNotificationContent.m */; };
+		537E0AC2CAB8460D98C5128F /* APPNotificationOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C32BE43FA8F498EAC10B8C1 /* APPNotificationOptions.m */; };
+		48B25F20FBC143B0BA2E7A64 /* UNUserNotificationCenter+APPLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1589D1051441DF8A1DBA9D /* UNUserNotificationCenter+APPLocalNotification.m */; };
+		7EA9F0A980E04F7CA68181AE /* UNNotificationRequest+APPLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDAC92BC9FB49A0BB0265B5 /* UNNotificationRequest+APPLocalNotification.m */; };
+		EDB4E01C5BDB4F248368B9A8 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC939E661B394635AFB66E29 /* UserNotifications.framework */; };
+		EEE8BCE75EB34D128F418ACA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9D7EB6F7F9406FA6B61005 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,27 +90,27 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "NotificationExample/config.xml"; sourceTree = "<group>"; };
-		D3C0D45DCEC34360A9A5D6CB /* APPBadge.m */ = {isa = PBXFileReference; name = "APPBadge.m"; path = "cordova-plugin-badge/APPBadge.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		C75EB7C9C17D4F28B65A6780 /* APPBadge.h */ = {isa = PBXFileReference; name = "APPBadge.h"; path = "cordova-plugin-badge/APPBadge.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		2E44E1AA1687473F99B754D0 /* CDVDevice.m */ = {isa = PBXFileReference; name = "CDVDevice.m"; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		A985EADD65594D8BA20BFC48 /* CDVDevice.h */ = {isa = PBXFileReference; name = "CDVDevice.h"; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		2C6A283672B24600A92801F4 /* APPLocalNotification.m */ = {isa = PBXFileReference; name = "APPLocalNotification.m"; path = "cordova-plugin-local-notification/APPLocalNotification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		A6C9A78AD03742B990219745 /* APPNotificationContent.m */ = {isa = PBXFileReference; name = "APPNotificationContent.m"; path = "cordova-plugin-local-notification/APPNotificationContent.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		540ED1B8402742978E14578B /* APPNotificationOptions.m */ = {isa = PBXFileReference; name = "APPNotificationOptions.m"; path = "cordova-plugin-local-notification/APPNotificationOptions.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		26D215E7A36F4B1EB6F10DC8 /* UNUserNotificationCenter+APPLocalNotification.m */ = {isa = PBXFileReference; name = "UNUserNotificationCenter+APPLocalNotification.m"; path = "cordova-plugin-local-notification/UNUserNotificationCenter+APPLocalNotification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		F4C12A532C704E52A62C4334 /* UNNotificationRequest+APPLocalNotification.m */ = {isa = PBXFileReference; name = "UNNotificationRequest+APPLocalNotification.m"; path = "cordova-plugin-local-notification/UNNotificationRequest+APPLocalNotification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		C6828B5D39054A76A6F9AF36 /* APPLocalNotification.h */ = {isa = PBXFileReference; name = "APPLocalNotification.h"; path = "cordova-plugin-local-notification/APPLocalNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		19940BA967814DBD85CB7786 /* APPNotificationContent.h */ = {isa = PBXFileReference; name = "APPNotificationContent.h"; path = "cordova-plugin-local-notification/APPNotificationContent.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		E2899233268C445B8AE65CE3 /* APPNotificationOptions.h */ = {isa = PBXFileReference; name = "APPNotificationOptions.h"; path = "cordova-plugin-local-notification/APPNotificationOptions.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		08F103147CA24EEBBF02A759 /* UNUserNotificationCenter+APPLocalNotification.h */ = {isa = PBXFileReference; name = "UNUserNotificationCenter+APPLocalNotification.h"; path = "cordova-plugin-local-notification/UNUserNotificationCenter+APPLocalNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		5A73E757FE3C45DF83D910EF /* UNNotificationRequest+APPLocalNotification.h */ = {isa = PBXFileReference; name = "UNNotificationRequest+APPLocalNotification.h"; path = "cordova-plugin-local-notification/UNNotificationRequest+APPLocalNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		9CD27E525CD74F6CACD5163D /* UserNotifications.framework */ = {isa = PBXFileReference; name = "UserNotifications.framework"; path = "System/Library/Frameworks/UserNotifications.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		344954E05E184D0AB023F51F /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		7F2DCE6B7FA640D5B966CCCF /* Toast+UIView.m */ = {isa = PBXFileReference; name = "Toast+UIView.m"; path = "cordova-plugin-x-toast/Toast+UIView.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		6D9ACD81F51C4F1984D3ED1F /* Toast.m */ = {isa = PBXFileReference; name = "Toast.m"; path = "cordova-plugin-x-toast/Toast.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		FD005C856FD74AB3A393442E /* Toast+UIView.h */ = {isa = PBXFileReference; name = "Toast+UIView.h"; path = "cordova-plugin-x-toast/Toast+UIView.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		6D8066F821CD4D248217696C /* Toast.h */ = {isa = PBXFileReference; name = "Toast.h"; path = "cordova-plugin-x-toast/Toast.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		35527B099D464788BB514B1C /* QuartzCore.framework */ = {isa = PBXFileReference; name = "QuartzCore.framework"; path = "System/Library/Frameworks/QuartzCore.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		03513775C6AB4D2A8A2328A5 /* APPBadge.m */ = {isa = PBXFileReference; name = "APPBadge.m"; path = "cordova-plugin-badge/APPBadge.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		166BBAC9681D4113B17C7074 /* APPBadge.h */ = {isa = PBXFileReference; name = "APPBadge.h"; path = "cordova-plugin-badge/APPBadge.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0D47390566E84738B1101B38 /* APPLocalNotification.m */ = {isa = PBXFileReference; name = "APPLocalNotification.m"; path = "cordova-plugin-local-notification/APPLocalNotification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		0E4E9516675342DEA4ED3B0A /* APPNotificationContent.m */ = {isa = PBXFileReference; name = "APPNotificationContent.m"; path = "cordova-plugin-local-notification/APPNotificationContent.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		4C32BE43FA8F498EAC10B8C1 /* APPNotificationOptions.m */ = {isa = PBXFileReference; name = "APPNotificationOptions.m"; path = "cordova-plugin-local-notification/APPNotificationOptions.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		8B1589D1051441DF8A1DBA9D /* UNUserNotificationCenter+APPLocalNotification.m */ = {isa = PBXFileReference; name = "UNUserNotificationCenter+APPLocalNotification.m"; path = "cordova-plugin-local-notification/UNUserNotificationCenter+APPLocalNotification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		5FDAC92BC9FB49A0BB0265B5 /* UNNotificationRequest+APPLocalNotification.m */ = {isa = PBXFileReference; name = "UNNotificationRequest+APPLocalNotification.m"; path = "cordova-plugin-local-notification/UNNotificationRequest+APPLocalNotification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		8E37F18CA61E4DA99E02D475 /* APPLocalNotification.h */ = {isa = PBXFileReference; name = "APPLocalNotification.h"; path = "cordova-plugin-local-notification/APPLocalNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		27084840206740A3BDCCBF5C /* APPNotificationContent.h */ = {isa = PBXFileReference; name = "APPNotificationContent.h"; path = "cordova-plugin-local-notification/APPNotificationContent.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0A6D3F19F5EA490181B02C93 /* APPNotificationOptions.h */ = {isa = PBXFileReference; name = "APPNotificationOptions.h"; path = "cordova-plugin-local-notification/APPNotificationOptions.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		DDB1AB115B094B0E85F40C1A /* UNUserNotificationCenter+APPLocalNotification.h */ = {isa = PBXFileReference; name = "UNUserNotificationCenter+APPLocalNotification.h"; path = "cordova-plugin-local-notification/UNUserNotificationCenter+APPLocalNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		222814F8891A4870B364BAC8 /* UNNotificationRequest+APPLocalNotification.h */ = {isa = PBXFileReference; name = "UNNotificationRequest+APPLocalNotification.h"; path = "cordova-plugin-local-notification/UNNotificationRequest+APPLocalNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		AC939E661B394635AFB66E29 /* UserNotifications.framework */ = {isa = PBXFileReference; name = "UserNotifications.framework"; path = "System/Library/Frameworks/UserNotifications.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		4B9D7EB6F7F9406FA6B61005 /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,9 +119,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
-				D45B2D9AA9E64C33B8666B36 /* UserNotifications.framework in Frameworks */,
-				3D39D55F5E3F45389E7FD132 /* CoreLocation.framework in Frameworks */,
 				768CD6A7A9AF458D922A2FED /* QuartzCore.framework in Frameworks */,
+				EDB4E01C5BDB4F248368B9A8 /* UserNotifications.framework in Frameworks */,
+				EEE8BCE75EB34D128F418ACA /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,9 +183,9 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9CD27E525CD74F6CACD5163D /* UserNotifications.framework */,
-				344954E05E184D0AB023F51F /* CoreLocation.framework */,
 				35527B099D464788BB514B1C /* QuartzCore.framework */,
+				AC939E661B394635AFB66E29 /* UserNotifications.framework */,
+				4B9D7EB6F7F9406FA6B61005 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -212,24 +212,24 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				D3C0D45DCEC34360A9A5D6CB /* APPBadge.m */,
-				C75EB7C9C17D4F28B65A6780 /* APPBadge.h */,
 				2E44E1AA1687473F99B754D0 /* CDVDevice.m */,
 				A985EADD65594D8BA20BFC48 /* CDVDevice.h */,
-				2C6A283672B24600A92801F4 /* APPLocalNotification.m */,
-				A6C9A78AD03742B990219745 /* APPNotificationContent.m */,
-				540ED1B8402742978E14578B /* APPNotificationOptions.m */,
-				26D215E7A36F4B1EB6F10DC8 /* UNUserNotificationCenter+APPLocalNotification.m */,
-				F4C12A532C704E52A62C4334 /* UNNotificationRequest+APPLocalNotification.m */,
-				C6828B5D39054A76A6F9AF36 /* APPLocalNotification.h */,
-				19940BA967814DBD85CB7786 /* APPNotificationContent.h */,
-				E2899233268C445B8AE65CE3 /* APPNotificationOptions.h */,
-				08F103147CA24EEBBF02A759 /* UNUserNotificationCenter+APPLocalNotification.h */,
-				5A73E757FE3C45DF83D910EF /* UNNotificationRequest+APPLocalNotification.h */,
 				7F2DCE6B7FA640D5B966CCCF /* Toast+UIView.m */,
 				6D9ACD81F51C4F1984D3ED1F /* Toast.m */,
 				FD005C856FD74AB3A393442E /* Toast+UIView.h */,
 				6D8066F821CD4D248217696C /* Toast.h */,
+				03513775C6AB4D2A8A2328A5 /* APPBadge.m */,
+				166BBAC9681D4113B17C7074 /* APPBadge.h */,
+				0D47390566E84738B1101B38 /* APPLocalNotification.m */,
+				0E4E9516675342DEA4ED3B0A /* APPNotificationContent.m */,
+				4C32BE43FA8F498EAC10B8C1 /* APPNotificationOptions.m */,
+				8B1589D1051441DF8A1DBA9D /* UNUserNotificationCenter+APPLocalNotification.m */,
+				5FDAC92BC9FB49A0BB0265B5 /* UNNotificationRequest+APPLocalNotification.m */,
+				8E37F18CA61E4DA99E02D475 /* APPLocalNotification.h */,
+				27084840206740A3BDCCBF5C /* APPNotificationContent.h */,
+				0A6D3F19F5EA490181B02C93 /* APPNotificationOptions.h */,
+				DDB1AB115B094B0E85F40C1A /* UNUserNotificationCenter+APPLocalNotification.h */,
+				222814F8891A4870B364BAC8 /* UNNotificationRequest+APPLocalNotification.h */,
 			);
 			name = Plugins;
 			path = "NotificationExample/Plugins";
@@ -341,15 +341,15 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				A737C1E7A1494F67B5CE88C4 /* APPBadge.m in Sources */,
 				5DECA1A6B8C34B53925A7129 /* CDVDevice.m in Sources */,
-				A8A439B79C274E45B2DFB75A /* APPLocalNotification.m in Sources */,
-				143FFDD35E074214BB006793 /* APPNotificationContent.m in Sources */,
-				570576B3968C44DA8200903A /* APPNotificationOptions.m in Sources */,
-				F380C3CE8C304B47ACA25326 /* UNUserNotificationCenter+APPLocalNotification.m in Sources */,
-				0A2FEFEC10884F5AB560C47F /* UNNotificationRequest+APPLocalNotification.m in Sources */,
 				3792B1534F8E490C92DAD48B /* Toast+UIView.m in Sources */,
 				B249A5506C0E43DA8C9A5A37 /* Toast.m in Sources */,
+				00289D1DD3F8482DA398175D /* APPBadge.m in Sources */,
+				325850302FFE476D8FED7E88 /* APPLocalNotification.m in Sources */,
+				6090A17CFA494837B18F01FF /* APPNotificationContent.m in Sources */,
+				537E0AC2CAB8460D98C5128F /* APPNotificationOptions.m in Sources */,
+				48B25F20FBC143B0BA2E7A64 /* UNUserNotificationCenter+APPLocalNotification.m in Sources */,
+				7EA9F0A980E04F7CA68181AE /* UNNotificationRequest+APPLocalNotification.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
